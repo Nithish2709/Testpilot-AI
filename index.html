@@ -627,6 +627,194 @@
             }
         }
 
+        /* Workflow & Pipeline Components */
+        .wf-grid {
+            display: grid;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .wf-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 26px;
+            backdrop-filter: blur(12px);
+            transition: all 0.25s ease;
+        }
+
+        .wf-card:hover {
+            border-color: var(--card-border-hover);
+        }
+
+        .wf-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .wf-card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .wf-pipeline {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .wf-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: rgba(30, 41, 59, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px 18px;
+            transition: all 0.2s;
+        }
+
+        .wf-step:hover {
+            background: rgba(30, 41, 59, 0.7);
+            border-color: rgba(99, 102, 241, 0.35);
+        }
+
+        .wf-step-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .wf-step-content {
+            flex: 1;
+        }
+
+        .wf-step-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .wf-step-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #f1f5f9;
+        }
+
+        .wf-step-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .wf-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
+        .wf-tag-ai {
+            background: rgba(139, 92, 246, 0.2);
+            color: #c084fc;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .wf-tag-exec {
+            background: rgba(6, 182, 212, 0.2);
+            color: #38bdf8;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .wf-tag-sec {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .wf-tag-valid {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        /* Concurrency Scenario Box */
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 16px;
+            margin-top: 14px;
+        }
+
+        .scenario-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .scenario-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .scenario-flow {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .scenario-flow li {
+            padding: 6px 0;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+            color: #cbd5e1;
+            display: flex;
+            gap: 8px;
+        }
+
+        .scenario-flow li:last-child {
+            border-bottom: none;
+        }
+
+        .scenario-check {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 3px solid var(--success);
+            padding: 8px 12px;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.825rem;
+            color: #a7f3d0;
+            margin-top: 8px;
+        }
+
         @media (max-width: 640px) {
             .container {
                 padding: 24px 16px 60px;
