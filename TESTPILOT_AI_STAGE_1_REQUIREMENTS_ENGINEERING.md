@@ -2,8 +2,10 @@
 ## Stage 1 – Requirements Engineering
 
 **Project Type:** Autonomous Multi-Agent Application Testing and Reliability Platform  
-**Document Status:** Initial requirements baseline  
-**Version:** 1.0
+**Document Status:** Approved & Completed (Milestone M1 Sign-Off)  
+**Version:** 1.0 Final  
+**Sign-off Date:** Stage 1 Week 1 Closeout  
+**Next Milestone:** Stage 2 – Use Case Design
 
 ---
 
@@ -280,28 +282,46 @@ These criteria describe intended outcomes. Their measurable thresholds and accep
 
 ---
 
-## 10. Stage 1 Completion Summary
+## 10. Stage 1 Completion Summary & Sign-Off
 
-| Area | Status |
-|---|---|
-| Project objective | Drafted |
-| Problem statement | Drafted |
-| Project scope | Drafted |
-| Stakeholders and actors | Identified |
-| Functional requirements | 12 identified |
-| Non-functional requirements | 11 identified |
-| Proposed technology stack | Identified |
-| Assumptions and constraints | Documented |
-| MVP scope | Drafted |
-| Success criteria | Drafted |
+| Area | Status | Review Notes |
+|---|---|---|
+| Project objective | **Approved** | Autonomous multi-agent testing with hybrid deterministic execution |
+| Problem statement | **Approved** | Realistic multi-persona concurrency failure discovery |
+| Project scope | **Approved** | 12 MVP capabilities defined; advanced features deferred |
+| Stakeholders and actors | **Approved** | Developer/Owner, Platform Admin, and 5 internal software components |
+| Functional requirements | **Approved (12/12)** | FR-01 through FR-12 defined with concurrency validation cases |
+| Non-functional requirements | **Approved (11/11)** | NFR-01 through NFR-11 benchmarked for 10–500 VU capacity |
+| Proposed technology stack | **Approved** | FastAPI, React, Locust, Playwright, PostgreSQL, Redis, Celery |
+| Multi-Agent roles | **Approved (7 Agents)**| 7 specialized agents specified with clear responsibilities |
+| Assumptions and constraints | **Approved** | SSRF prevention, credentials encryption, and LLM cost guardrails |
+| MVP scope | **Approved** | Realistic scope tailored to solo 5 hrs/week development cadence |
+| Success criteria | **Approved** | 9 verifiable outcomes established |
 
-**Stage 1 – Requirements Engineering: Initial draft completed.**
-
-The next stage is **Stage 2 – Use Case Design**, beginning with the system boundary and actor identification. The use case diagram and detailed use case specifications will be developed in that stage.
+**Stage 1 Milestone Status:** **PASSED & APPROVED (M1 Gate Met)**  
+**HTML Deliverable:** [`stage1.html`](./stage1.html)
 
 ---
 
-## 11. Design Principles
+## 11. Handover to Stage 2 (Use Case Design)
+
+With the requirements baseline officially approved, the project transitions into **Stage 2 – Use Case Design** (Planned duration: 2 weeks / 10 hours).
+
+### Handover Deliverables for Stage 2:
+1. **Primary Actors to Model:** Developer/Project Owner, Platform Administrator, System Scheduler.
+2. **System Boundaries to Diagram:** Frontend UI, Orchestration API, Testing Execution Sandbox, Target Application.
+3. **Core Use Cases to Formalize:**
+   - UC-01: Create and Configure Testing Project (FR-01, FR-02)
+   - UC-02: Analyze Application Requirements & Map Endpoints (FR-03)
+   - UC-03: Generate User Personas & Workflows (FR-04, FR-05)
+   - UC-04: Execute Concurrent Simulation (FR-06, FR-08, FR-10)
+   - UC-05: Run Real-Browser Validation (FR-07)
+   - UC-06: Analyze Failures and Root Causes (FR-11)
+   - UC-07: Generate and Export Verification Report (FR-12)
+
+---
+
+## 12. Design Principles
 
 The following principles will guide subsequent design decisions:
 

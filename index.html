@@ -649,6 +649,19 @@
 
     <div class="container">
 
+        <!-- Top Navigation -->
+        <nav style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--card-border);">
+            <div style="font-weight: 700; color: #fff; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+                <span style="color: var(--accent);">TestPilot</span> AI
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <a href="stage1.html" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); padding: 6px 14px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 600; transition: all 0.2s;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Stage 1 Completed (Approved SRS) &rarr;
+                </a>
+            </div>
+        </nav>
+
         <!-- Hero / Header -->
         <header>
             <div class="badge-row">
@@ -1169,16 +1182,19 @@
                     <!-- Stage 1 -->
                     <div class="tracker-row">
                         <div class="tracker-row-info">
-                            <div class="stage-num">1</div>
+                            <div class="stage-num" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">✓</div>
                             <div>
-                                <div class="stage-name">Stage 1: Requirements Engineering</div>
-                                <div class="stage-duration">1 week</div>
+                                <div class="stage-name" style="display: flex; align-items: center; gap: 8px;">
+                                    Stage 1: Requirements Engineering
+                                    <a href="stage1.html" style="font-size: 0.75rem; color: #38bdf8; text-decoration: none; padding: 2px 8px; border-radius: 4px; background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.25);">View SRS &rarr;</a>
+                                </div>
+                                <div class="stage-duration">1 week · Completed</div>
                             </div>
                         </div>
                         <select class="status-select" data-stage="1" onchange="updateProgress()">
                             <option value="Not Started">Not Started</option>
-                            <option value="In Progress" selected>In Progress</option>
-                            <option value="Completed">Completed</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed" selected>Completed</option>
                         </select>
                     </div>
 
@@ -1338,16 +1354,21 @@
                 <h2 class="section-title">7. What We Will Do First</h2>
             </div>
 
-            <div class="note-box" style="margin-bottom: 24px;">
+            <div class="note-box" style="margin-bottom: 24px; border-left: 3px solid var(--success); background: rgba(16, 185, 129, 0.08);">
                 <span
-                    style="color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Starting
-                    Point</span>
-                <strong style="color: #fff; font-size: 1.05rem;">Stage 1 – Requirements Engineering: Review and
-                    Finalization</strong>
+                    style="color: #34d399; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    Completed Milestone (M1)
+                </span>
+                <strong style="color: #fff; font-size: 1.05rem;">Stage 1 – Requirements Engineering: Completed & Approved</strong>
                 <p style="margin-top: 6px; font-size: 0.9rem; color: #cbd5e1;">
-                    Although we have already drafted the requirements, we will spend the first week reviewing them and
-                    checking whether they are complete enough for production-oriented design. Then we begin Stage 2.
+                    The requirements specification (FR-01 to FR-12, NFR-01 to NFR-11, 7 AI Agent responsibilities, and 10–500 VU targets) has been reviewed, approved, and finalized for production-oriented development.
                 </p>
+                <div style="margin-top: 12px;">
+                    <a href="stage1.html" style="display: inline-flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4); padding: 6px 14px; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 600;">
+                        Open Stage 1 Specification Document &rarr;
+                    </a>
+                </div>
             </div>
 
             <!-- Stage 2 Focus Box -->
